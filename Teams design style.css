@@ -1,0 +1,1403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.outer-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: transparent;
+    display: none;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+
+}
+
+.top-bar {
+    float: right;
+}
+
+.people-content {
+    animation: backInRight;
+    animation-duration: 1.5s;
+}
+
+.animate__animated.animate__fadeInLeft {
+    animation-duration: 2s;
+}
+
+.people-content.active .body-content {
+    width: 77%;
+}
+
+.people-content.active .people-tap {
+    border-bottom: 2px solid #9e9af9;
+}
+
+.spantextt {
+    margin: 0;
+}
+
+.mssagestext {
+    display: flex;
+    flex-direction: column;
+    width: 177px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #333333;
+    margin-bottom: 15px;
+}
+
+span.logobarani {
+    width: 30px;
+    right: 210px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #e8ced2;
+}
+
+span.logotamil {
+    width: 30px;
+    right: 115px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #d2ebde;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    max-height: 59vh;
+    align-items: flex-end;
+}
+
+.chatPara.send.active {
+    color: white;
+    word-break: break-all;
+    max-height: 49vh;
+    margin: 15px 10px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #2f2f4a;
+    padding: 5px;
+}
+
+.editMsg {
+    position: absolute;
+    width: 79px;
+}
+
+.texthead {
+    color: white;
+    font-size: 10px;
+}
+
+.chatmsg {
+    color: white;
+    padding: 0;
+    position: relative;
+    font-size: 17px;
+    left: 26px;
+    margin: 0;
+}
+
+.texthead {
+    font-size: 10px;
+    position: relative;
+    left: 25px;
+}
+
+strong.logo {
+    top: 3px;
+    position: absolute;
+    left: 6px;
+    color: #8f2a32;
+}
+
+strong.logotamil {
+    top: 2px;
+    position: absolute;
+    left: 5px;
+    color: #8f2a32;
+}
+
+.top-right {
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    width: 22px;
+}
+
+.team-members {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    margin-right: 420px;
+    font-size: 14px;
+}
+
+.menubar {
+    background-color: #242424;
+}
+
+.left-cont {
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.left-items {
+    color: #d2d2d2;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.left-items .shield-icon {
+    color: #d2d2d2;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.left-cont img {
+    width: 100%;
+    padding: 20px;
+}
+
+.left-cont p {
+    padding: 10px 5px;
+}
+
+.right-cont {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.right-items {
+    display: flex;
+    /* width: 32px; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-items .menubar-icons {
+    color: white;
+    font-size: 25px;
+}
+
+.people-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    padding: 15px 14px;
+}
+
+.members-items:hover {
+    padding-left: 10px;
+}
+
+.send-btn:hover {
+    font-size: 20px;
+}
+
+.people-icon:active {
+    border-bottom: 2px solid #9a9ef9;
+}
+
+.people-icon:hover {
+    color: #9197f2;
+    animation: flash;
+    animation-duration: 1s;
+}
+
+.people-icon p {
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.right-cont img {
+    display: inline-block;
+}
+
+.top-right ion-icon {
+    width: 100%;
+}
+
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: "";
+    height: 48px;
+    width: 1px;
+    top: 14px;
+    right: 0;
+    background-color: #d2d2d2;
+    position: absolute;
+}
+
+.leave-btn {
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #c4314b;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    margin: 10px 10px 4px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+}
+
+.tele-icon {
+    transform: rotate(135deg);
+    font-size: 20px;
+}
+
+.body-content {
+    background-color: #1f1f1f;
+    height: 80vh;
+    width: 100%;
+}
+
+.body-items {
+    margin-bottom: 140px;
+    color: #d2d2d2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.person {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.person1 {
+    background-color: #dcf0f2;
+}
+
+.person2 {
+    background-color: #e8ced2;
+}
+
+.person3 {
+    background-color: #d6d5ea;
+    border: 2px solid black;
+    outline: 4px solid #9a9ef9;
+    animation: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.person4 {
+    background-color: #d2ebde;
+}
+
+
+.person-name {
+    position: absolute;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.person-name1 {
+    top: 52px;
+    left: 52px;
+    color: #346867;
+}
+
+.person-name2 {
+    top: 52px;
+    left: 56px;
+    color: #521419;
+}
+
+.person-name3 {
+    top: 48px;
+    left: 48px;
+    color: #2a234e;
+}
+
+.person-name4 {
+    top: 48px;
+    left: 60px;
+    color: #1e5e3d;
+}
+
+.body-inner {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 78px;
+}
+
+.body-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -60px;
+}
+
+.bottom-box {
+    width: 250px;
+    height: 150px;
+    background-color: #3d3d3d;
+    margin: -45px 6px;
+}
+
+.bottom-box img {
+    padding: 34px;
+    margin-left: 50px;
+}
+
+.tamil-img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.members-list {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-top: -42px;
+    margin-left: 20px;
+    display: none;
+}
+
+.members-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 26px;
+}
+
+.members-items p {
+    margin-top: -3px;
+    font-size: 11px;
+    width: 180px;
+}
+
+.people-content {
+    background-color: #1f1f1f;
+    display: none;
+    border-left: 2px solid black;
+}
+
+.sub-person {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.sub-person3 {
+    border: 1px solid black;
+    outline: 2px solid #9a9ef9;
+}
+
+.sub-tamil-img {
+    width: 40px;
+    height: 40px;
+}
+
+.sub-person-name {
+    font-size: 12px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    letter-spacing: 1px;
+}
+
+.members-items {
+    position: relative;
+}
+
+.members-items:hover {
+    background-color: #3d3d3d;
+}
+
+.members-items:hover .mic-more {
+    display: block;
+}
+
+.mic-more {
+    position: absolute;
+    font-size: 16px;
+    right: 60px;
+    top: 15px;
+    display: none;
+    cursor: pointer;
+}
+
+.mic-icon {
+    font-size: 17px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.removeitem {
+    top: 45px;
+    right: 75px;
+    background-color: #1f1f1f;
+    height: 22px;
+    width: 70px;
+    outline: 1px solid wheat;
+    border-radius: 4px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
+.remove {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.remove:hover {
+    color: #9a9ef9;
+}
+
+.add {
+    position: relative;
+    padding: 20px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.add:hover {
+    color: #9a9ef9;
+}
+
+.people-header {
+    border-bottom: 2px solid black;
+    padding-left: 20px;
+}
+
+.people-header p {
+    display: inline-block;
+    font-weight: 800;
+    color: white;
+}
+
+.search-box {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.search {
+    padding: 10px;
+    background-color: #3d3d3d;
+    height: 20px;
+    border-right: none;
+    width: 270px;
+    border-bottom: 2px solid black;
+}
+
+.search:hover {
+    border-bottom: none;
+}
+
+.search:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #9a9ef9;
+}
+
+.cancel-btn {
+    margin-left: -6px;
+}
+
+.cancel-btnpeople {
+    margin-left: 50px;
+}
+
+.close-icon {
+    margin-top: 20px;
+    color: #d2d2d2;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 105px;
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    color: #9a9ef9;
+}
+
+.total-members {
+    position: relative;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.total-members p {
+    display: inline-block;
+    margin-left: 19px;
+    color: #d2d2d2;
+}
+
+.down-arrow,
+.down-arrow2 {
+    position: absolute;
+    left: 3px;
+    top: 13px;
+    color: #d2d2d2;
+    cursor: pointer;
+}
+
+.mute-btn {
+    margin-left: 36px;
+    background-color: #3d3d3d;
+    padding: 5px 15px;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid white;
+    /* font-weight: 600; */
+    cursor: pointer;
+}
+
+.body-outer {
+    display: flex;
+    background-color: black;
+}
+
+.active.people-content {
+    width: 24%;
+}
+
+.chat-content {
+    display: none;
+    background-color: #1f1f1f;
+    width: 24%;
+    border-left: 3px solid black;
+    animation: backInDown;
+    animation-duration: 1.3s;
+}
+
+.chat-header {
+    border-bottom: 2px solid black;
+    padding-left: 20px;
+}
+
+.chat-header p {
+    color: white;
+    display: inline-block;
+    font-weight: 800;
+}
+
+.chat-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.chat-box {
+    padding-left: 30px;
+}
+
+.chat {
+    padding: 10px;
+    background-color: #3d3d3d;
+    height: 20px;
+    width: 185px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+.chat:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #9a9ef9;
+}
+
+.chat-para {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-left: 120px;
+}
+
+.send-btn {
+    color: #ffffff;
+    float: right;
+    margin-top: 10px;
+    margin-right: 26px;
+    font-size: 30px;
+}
+
+.send-btn:hover {
+    color: #9a9ef9;
+}
+
+.active {
+    display: block;
+}
+
+.right-items .menubar-icons:hover {
+    font-size: 28px;
+}
+
+.hovertext {
+    position: absolute;
+    top: 118px;
+    color: white;
+    display: none;
+    z-index: 1;
+    -webkit-transition: all 3s linear;
+    -moz-transition: all 3s linear;
+    -ms-transition: all 3s linear;
+    -o-transition: all 3s linear;
+    transition: all 3s linear;
+}
+
+.hovertextmore {
+    position: absolute;
+    top: 69px;
+    color: white;
+    display: none;
+}
+
+p.text1 {
+    font-size: 15px;
+    width: 100px;
+}
+
+.people-icon:hover {
+    color: #9a9ef9
+}
+
+.people-icon:hover .hovertext {
+    display: block;
+}
+
+.people-icon:hover .hovertextmore {
+    display: block;
+}
+
+p.text {
+    font-size: 15px;
+}
+
+.person11,
+.person12,
+.person13,
+.person14 {
+    display: none;
+    margin: 1px;
+}
+
+/* p.personname {
+    position: absolute;
+    top: 17px;
+    left: 55px;
+} */
+.other-total-members {
+    position: relative;
+    font-size: 12px;
+    margin-top: -25px;
+}
+
+.other-total-members p {
+    display: inline-block;
+    margin-left: 19px;
+    color: #d2d2d2;
+}
+
+span.messageContent {
+    position: absolute;
+    font-size: 17px;
+}
+
+span.sendTime {
+    position: relative;
+    top: -23px;
+    font-size: 10px;
+}
+
+ion-icon.menuAction.white.md.hydrated {
+    position: relative;
+    top: -20px;
+    right: -15px;
+}
+
+span.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    left: 15px;
+    top: 17px;
+    position: absolute;
+}
+
+span.circletext {
+    cursor: pointer;
+    color: black;
+    font-size: 10px;
+    display: inline-block;
+    width: 45px;
+    text-align: center;
+    position: absolute;
+    background-color: white;
+    top: 20px;
+    display: none;
+}
+
+span.circle:hover span.circletext {
+    display: block;
+}
+
+.menubar-icons:hover,
+.people-icon p:hover {
+    color: #9197f2;
+}
+
+span.deleteBtn {
+    position: relative;
+    top: -65px;
+    right: 30px;
+    display: none;
+}
+
+span.editBtn {
+    position: relative;
+    top: -83px;
+    right: -20px;
+    display: none;
+}
+
+.animate__animated .animate__bounce,
+.animate__backInDown,
+.animate__backInRight,
+.animate__slideInLeft {
+    --animate-duration: 3s;
+}
+
+@media only screen and (max-width: 1024px) {
+    .body-content {
+        height: 91vh;
+    }
+
+    .items {
+        background-color: #47787891;
+        width: 430px;
+        height: 400px;
+    }
+
+    .body-inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .body-items {
+        margin-bottom: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom-box img {
+        padding: 45px;
+        margin-left: 76px;
+        width: 125px;
+    }
+
+    .bottom-box {
+        width: 360px;
+        height: 230px;
+        margin: 70px 60px;
+    }
+
+    span.logobarani {
+        right: 295px;
+    }
+
+    .chat {
+        height: 30px;
+        width: 260px;
+    }
+
+    .send-btn {
+        margin-right: 39px;
+        font-size: 30px;
+    }
+
+    .chat-content {
+        width: 50%;
+    }
+
+    .active.people-content {
+        width: 50%;
+    }
+
+    .activepeople.items {
+        width: 310px;
+        height: 373px;
+    }
+
+    .mic-icon {
+        right: -65px;
+    }
+
+    .mic-more {
+        right: -30px;
+        top: 13px;
+    }
+
+    .chat-box {
+        margin-bottom: -80px;
+    }
+
+    .cancel-btn {
+        margin-left: 70px;
+    }
+
+    .cancel-btnpeople {
+        margin-left: 80px;
+    }
+
+    .team-members {
+        margin-right: 270px;
+    }
+
+    .mute-btn {
+        margin-left: 65px;
+    }
+
+    .members-items p {
+        width: 195px;
+    }
+
+    .chat-inner {
+        height: 84vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: #1f1f1f;
+    }
+
+    .items {
+        width: 340px;
+        height: 315px;
+    }
+
+    .body-inner {
+        margin-top: -130px;
+    }
+
+    .activepeople.outrmenubar {
+        position: absolute;
+        z-index: 1;
+        left: 38px;
+        bottom: 35px;
+        display: block;
+    }
+
+    .activepeople.outrmenubar .left-cont {
+        position: absolute;
+        top: -1707px;
+    }
+
+    .outrmenubar {
+        position: absolute;
+        z-index: 1;
+        left: 38px;
+        bottom: -15px;
+    }
+
+    .active.people-content {
+        width: 100%;
+        margin-top: -95px;
+        margin-left: 25px;
+        border: none;
+    }
+
+    .bottom-box {
+        width: 240px;
+        height: 130px;
+        margin: 65px 30px;
+        margin-bottom: 105px;
+    }
+
+    .bottom-box img {
+        padding: 30px;
+        margin-left: 50px;
+        width: 70px;
+    }
+
+
+    .left-cont {
+        position: absolute;
+        top: -982px;
+        left: -30px;
+    }
+
+    .body-outer {
+        background-color: #1f1f1f;
+        margin-top: 100px;
+    }
+
+    .team-members {
+        margin-right: 170px;
+    }
+
+    .left-cont p {
+        padding: 10px 25px;
+    }
+
+    .activepeople.items {
+        width: 370px;
+        height: 315px;
+    }
+
+    .person {
+        width: 160px;
+        height: 160px;
+    }
+
+    .tamil-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .person-name2 {
+        top: 30px;
+        left: 40px;
+    }
+
+    .person-name3 {
+        top: 30px;
+        left: 30px;
+    }
+
+    .person-name4 {
+        top: 30px;
+        left: 36px;
+    }
+
+    .sub-person {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sub-tamil-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sub-person-name {
+        left: 12px;
+        top: 12px;
+    }
+
+    .members.active .body-inner {
+        margin-top: -36px;
+    }
+
+    .body-inner.members-list.active.count2 {
+        margin-top: -42px;
+    }
+
+    .mic-icon {
+        right: -50px;
+    }
+
+    .chat-inner {
+        height: 76vh;
+    }
+
+    .body-content {
+        height: 78vh;
+    }
+
+    .chat-content {
+        width: 100%;
+        margin-top: -73px;
+    }
+
+    span.logobarani {
+        left: 20px;
+    }
+
+    .chat {
+        width: 685px;
+    }
+
+    .chat-box {
+        margin-bottom: -25px;
+    }
+
+    span.logobarani {
+        right: 275px;
+    }
+
+    .mic-more {
+        right: -25px;
+    }
+
+    .cancel-btn {
+        margin-left: 485px;
+    }
+
+    .cancel-btnpeople {
+        margin-left: 465px;
+    }
+
+    .mute-btn {
+        margin-left: 480px;
+    }
+
+    .members-items p {
+        width: 610px;
+    }
+
+    .search {
+        width: 695px;
+    }
+
+    .activepeople {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .items {
+        width: 175px;
+        height: 180px;
+        font-size: 10px;
+        margin-bottom: 20px;
+        margin: 6px;
+    }
+
+    .person {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tamil-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .person-name2 {
+        top: 13px;
+        left: 20px;
+        font-size: 50px;
+    }
+
+    .person-name1 {
+        top: 11px;
+        left: 4px;
+        font-size: 50px;
+    }
+
+    .person-name4 {
+        top: 15px;
+        font-size: 50px;
+        left: 19px;
+    }
+
+    .person-name3 {
+        top: 14px;
+        left: 12px;
+        font-size: 50px;
+    }
+
+    .top-right {
+        display: none;
+    }
+
+    .team-members {
+        margin-right: 167px;
+        font-size: 12px;
+    }
+
+    .left-cont p {
+        padding: 10px 0px;
+        font-size: 13px;
+    }
+
+    .menubar {
+        position: relative;
+        top: 0;
+        z-index: 1;
+    }
+
+    .left-cont {
+        position: absolute;
+        top: -607px;
+        left: 15px;
+    }
+
+    .activepeople.outrmenubar {
+        position: absolute;
+        z-index: 1;
+        left: 6px;
+        bottom: 35px;
+        display: block;
+    }
+
+    .activepeople.outrmenubar .left-cont {
+        position: absolute;
+        top: -590px;
+    }
+
+    .cancel-btnpeople {
+        margin-left: 116px;
+    }
+
+    .active.people-content {
+        width: 100%;
+        margin-top: -95px;
+        margin-left: 0px;
+    }
+
+    .left-items .shield-icon {
+        font-size: 13px;
+        padding: 17px;
+    }
+
+    .body-content {
+        height: 40vh;
+    }
+
+    .activepeople .people-icon.people-tap {
+        position: absolute;
+        top: -584px;
+        left: 240px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .people-icon.people-tap {
+        position: absolute;
+        top: -613px;
+        left: 220px;
+    }
+
+    .body-outer {
+        margin-top: 70px;
+    }
+
+    .people-icon p {
+        visibility: hidden;
+    }
+
+    .activepeople .people-icon.chat-tap {
+        position: absolute;
+        top: -583px;
+        left: 295px;
+        padding: 0;
+    }
+
+    .people-icon.chat-tap {
+        position: absolute;
+        top: -597px;
+        left: 295px;
+        padding: 0;
+    }
+
+    .bottom-box {
+        width: 136px;
+        height: 90px;
+        margin: 77px 13px;
+    }
+
+    .bottom-box img {
+        padding: 2px;
+        margin-left: 24px;
+    }
+
+    span.textbutt {
+        visibility: hidden;
+    }
+
+    .tele-icon {
+        font-size: 43px;
+        margin-right: -35px;
+    }
+
+    .leave-btn {
+        width: 38px;
+        height: 35px;
+        margin: -6px 10px 4px;
+    }
+
+    .activepeople {
+        display: none;
+    }
+
+    .members.active .body-inner {
+        margin-top: -36px;
+    }
+
+    .active.people-content {
+        width: 99%;
+        margin-top: -75px;
+    }
+
+    .sub-person {
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .sub-person-name {
+        font-size: 21px !important;
+    }
+
+    .sub-tamil-img {
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .mic-icon {
+        right: -50px;
+        top: 16px;
+    }
+
+    .send-btn {
+        margin-right: 26px;
+        font-size: 14px;
+    }
+
+    span.logobarani {
+        right: 322px;
+    }
+
+    .messages {
+        margin-right: 50px;
+    }
+
+    .mic-more {
+        right: -25px;
+        top: 25px;
+    }
+
+    .chat-box {
+        margin-bottom: -25px;
+        padding-left: 30px;
+    }
+
+    .chat-content {
+        width: 97%;
+    }
+
+    .cancel-btn {
+        margin-left: 110px;
+    }
+
+    .tabnone {
+        display: none;
+    }
+
+    .sub-person-name {
+        left: 8px;
+        top: 8px;
+    }
+
+    .line::after {
+        content: "";
+        display: none;
+    }
+
+    .members-items p {
+        width: 225px;
+    }
+
+    .search {
+        width: 310px;
+    }
+
+    .mute-btn {
+        margin-left: 100px;
+    }
+
+    .activepeople.outrmenubar {
+        bottom: 0;
+        display: block;
+    }
+
+    .chat {
+        width: 295px;
+    }
+
+    .people-content-inner {
+        margin: 8px;
+    }
+
+    .nametext {
+        visibility: hidden;
+    }
+
+    .outrmenubar {
+        position: absolute;
+        z-index: 1;
+        left: 7px;
+        bottom: -15px;
+    }
+}
